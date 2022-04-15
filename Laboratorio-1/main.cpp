@@ -79,7 +79,6 @@ int funcionSumaImparesMenoresRecursiva(int n){
 }
 
 int sumaImparesMenoresIterativa(int n){
-    int i = 0;
     int sum = 0;
     for (int i = 0; i < n; i++) {
         if (i % 2 == 1) {
@@ -94,8 +93,25 @@ int funcionSumaImparesMenoresIterativa(int n){
     std::cin>> n;
     std::cout<< sumaImparesMenoresIterativa(n) << std::endl;
 }
+
+int sumaDivisoresIterativa (int n) {
+
+    int sum = 0;
+    for (int i = 1; i < n; ++i) {
+        if (n % i == 0) {
+            sum = sum + i;
+        } else {}
+        } return sum;
+    }
+
+    int funcionSumaDivisoresIterativa(int) {
+    int n;
+        std::cout << "Dame un num entero para que te sume sus divisores" << std::endl;
+        std::cin>> n;
+        std:: cout << "Resultado: " << sumaDivisoresIterativa(n) << std::endl;
+}
 int main() {
     int a;
-    funcionSumaImparesMenoresIterativa(a);
+    funcionSumaDivisoresIterativa(a);
     return 0;
 }
