@@ -21,7 +21,9 @@ bool esPrimo(int n) {
 
 
 int main() {
-    std::cout << (  esPrimo(5) ? "true" : "false")<< std::endl;
-    std::cout << "resto: " << 4 % 2 << std::endl;
+    int a;
+    std::cout << "Ingresar numero para verificar si es primo:" << std::endl;
+    std::cin >> a;
+    std::cout << (  esPrimo(a) ? "El número es primo." : "El número no es primo")<< std::endl;
     return 0;
 }
