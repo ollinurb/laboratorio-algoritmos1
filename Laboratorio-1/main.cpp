@@ -59,10 +59,30 @@ int funcionFibonacciIterativa(int n) {
     std::cout << "Pedir numero de Fibonacci" << std::endl;
     std::cin >> n;
     std::cout << fibonacciIterativa(n) << std::endl;
+
+}
+int sumaImparesMenoresRecursiva(int n) {
+    if (n == 1) {
+        return 0;
+    }
+    //else if (n == 2) {
+    //    return 1;
+    //}
+    else if (n  % 2 == 0) {
+        return sumaImparesMenoresRecursiva(n - 1) + (n-1);
+    } else {
+        return sumaImparesMenoresRecursiva(n-2 ) + (n-2);
+    }
+}
+
+int funcionSumaImparesMenoresRecursiva(int n){
+    std::cout<< "Dame un numero para que te sume todos los impares menores al mismo" << std::endl;
+    std::cin>> n;
+    std::cout<< sumaImparesMenoresRecursiva(n) << std::endl;
 }
 
 int main() {
     int a;
-    funcionFibonacciIterativa(a);
+    funcionSumaImparesMenoresRecursiva(a);
     return 0;
 }
