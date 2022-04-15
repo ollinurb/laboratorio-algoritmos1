@@ -65,9 +65,6 @@ int sumaImparesMenoresRecursiva(int n) {
     if (n == 1) {
         return 0;
     }
-    //else if (n == 2) {
-    //    return 1;
-    //}
     else if (n  % 2 == 0) {
         return sumaImparesMenoresRecursiva(n - 1) + (n-1);
     } else {
@@ -81,8 +78,24 @@ int funcionSumaImparesMenoresRecursiva(int n){
     std::cout<< sumaImparesMenoresRecursiva(n) << std::endl;
 }
 
+int sumaImparesMenoresIterativa(int n){
+    int i = 0;
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        if (i % 2 == 1) {
+            sum = sum + i;
+        } else {
+    }
+    } return sum;
+}
+
+int funcionSumaImparesMenoresIterativa(int n){
+    std::cout<< "Dame un numero para que te sume todos los impares menores al mismo" << std::endl;
+    std::cin>> n;
+    std::cout<< sumaImparesMenoresIterativa(n) << std::endl;
+}
 int main() {
     int a;
-    funcionSumaImparesMenoresRecursiva(a);
+    funcionSumaImparesMenoresIterativa(a);
     return 0;
 }
