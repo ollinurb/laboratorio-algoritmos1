@@ -62,19 +62,19 @@ int calificacionesCentinela (int &i, int &sum, int &aprobados, int &reprobados) 
 
 int main() {
     try {
-        int n;
-        int a;
+        int cantidadNotas;
+        int sumaNotas;
         int aprobados;
         int reprobados;
-        calificacionesCentinela(n, a, aprobados, reprobados);
-        if (n > 6) {
-            std::cout << "Suma de las notas: " << a + 1 << std::endl;
-            std::cout << "Promedio de las notas: " << (a + 1) / (n - 1) << std::endl;
-            std::cout << "Cantidad de las notas: " << (n - 1) << std::endl;
+        calificacionesCentinela(cantidadNotas, sumaNotas, aprobados, reprobados);
+        if (cantidadNotas > 6) {
+            std::cout << "Suma de las notas: " << sumaNotas + 1 << std::endl;
+            std::cout << "Promedio de las notas: " << (sumaNotas + 1) / (cantidadNotas - 1) << std::endl;
+            std::cout << "Cantidad de las notas: " << (cantidadNotas - 1) << std::endl;
             std::cout << "Aprobados: " << aprobados << std::endl;
             std::cout << "Reprobados: " << reprobados - 1 << std::endl;
         } else {
-            throw (n);
+            throw (cantidadNotas);
         }
     }
     catch (int myNum) {
