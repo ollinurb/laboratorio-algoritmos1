@@ -40,24 +40,46 @@ int calificaciones(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n
     std::cout << "Suma de calificacoines: " << sum << std::endl;
     std::cout << "Promedio de calificaciones " << sum / 10 << std::endl;
 }
-int calificacionesCentinela (int &i, int &sum) {
+int calificacionesCentinela (int &i, int &sum, int &aprobados, int &reprobados) {
     sum = 0;
     int n1;
     i = 0;
+    aprobados = 0;
+    reprobados = 0;
     while (n1 >= 0) {
         std::cout << "Agregar nota (-1 para terminar):" << std::endl;
         std::cin >> n1;
         sum = sum + n1;
         i = i + 1;
-}
+        if (n1 >= 6) {
+            aprobados = aprobados + 1;
+        }
+        else {
+            reprobados = reprobados + 1;
+        }
+    }
 }
 
 int main() {
-    int n;
-    int a;
-    calificacionesCentinela(n, a);
-    std::cout << "Suma de las notas: "<< a+1 << std::endl;
-    std::cout << "Promedio de las notas: " << (a+1)/(n-1) << std::endl;
-    std::cout << "Cantidad de las notas: " << (n-1) << std::endl;
+    try {
+        int n;
+        int a;
+        int aprobados;
+        int reprobados;
+        calificacionesCentinela(n, a, aprobados, reprobados);
+        if (n > 6) {
+            std::cout << "Suma de las notas: " << a + 1 << std::endl;
+            std::cout << "Promedio de las notas: " << (a + 1) / (n - 1) << std::endl;
+            std::cout << "Cantidad de las notas: " << (n - 1) << std::endl;
+            std::cout << "Aprobados: " << aprobados << std::endl;
+            std::cout << "Reprobados: " << reprobados - 1 << std::endl;
+        } else {
+            throw (n);
+        }
+    }
+    catch (int myNum) {
+        std::cout << "Error: Deben ingresarse al menos 6 notas" << std::endl;
+        std::cout << "Notas ingresadas: " << myNum - 1 << std::endl;
+    }
     return 0;
 }
