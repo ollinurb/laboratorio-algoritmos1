@@ -110,8 +110,27 @@ int sumaDivisoresIterativa (int n) {
         std::cin>> n;
         std:: cout << "Resultado: " << sumaDivisoresIterativa(n) << std::endl;
 }
+
+int combinatorio (int n, int k) {
+    if (n == k) {
+        return 1;
+    } else if (k == 0) {
+        return 1;
+    } else {
+        return combinatorio(n-1, k) + combinatorio(n-1, k-1);
+    }
+}
+
+int funcionCombinatorio (int n, int k) {
+    std::cout << "Para el combinatorio (n k), dar primero el valor de n y luego el valor de k" << std::endl;
+    std::cin >> n;
+    std::cin >> k;
+    std::cout << combinatorio(n,k) << std::endl;
+}
+
 int main() {
     int a;
-    funcionSumaDivisoresIterativa(a);
+    int b;
+    funcionCombinatorio(a,b);
     return 0;
 }
