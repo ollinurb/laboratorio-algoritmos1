@@ -5,40 +5,40 @@ void cambiarValor(int x) {
 }
 
 int calificaciones(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10) {
-    int sum = 0;
+    int sumaNotas = 0;
     std::cout << "Agregar calificaciones" << std::endl;
     std::cout << "Calificacion 1:" << std::endl;
     std::cin >> n1;
-    sum = sum + n1;
+    sumaNotas = sumaNotas + n1;
     std::cout << "Calificacion 2:" << std::endl;
     std::cin >> n2;
-    sum = sum + n2;
+    sumaNotas = sumaNotas + n2;
     std::cout << "Calificacion 3:" << std::endl;
     std::cin >> n3;
-    sum = sum + n3;
+    sumaNotas = sumaNotas + n3;
     std::cout << "Calificacion 4:" << std::endl;
     std::cin >> n4;
-    sum = sum + n4;
+    sumaNotas = sumaNotas + n4;
     std::cout << "Calificacion 5:" << std::endl;
     std::cin >> n5;
-    sum = sum + n5;
+    sumaNotas = sumaNotas + n5;
     std::cout << "Calificacion 6:" << std::endl;
     std::cin >> n6;
-    sum = sum + n6;
+    sumaNotas = sumaNotas + n6;
     std::cout << "Calificacion 7:" << std::endl;
     std::cin >> n7;
-    sum = sum + n7;
+    sumaNotas = sumaNotas + n7;
     std::cout << "Calificacion 8:" << std::endl;
     std::cin >> n8;
-    sum = sum + n8;
+    sumaNotas = sumaNotas + n8;
     std::cout << "Calificacion 9:" << std::endl;
     std::cin >> n9;
-    sum = sum + n9;
+    sumaNotas = sumaNotas + n9;
     std::cout << "Calificacion 10:" << std::endl;
     std::cin >> n10;
-    sum = sum + n10;
-    std::cout << "Suma de calificacoines: " << sum << std::endl;
-    std::cout << "Promedio de calificaciones " << sum / 10 << std::endl;
+    sumaNotas = sumaNotas + n10;
+    std::cout << "Suma de calificacoines: " << sumaNotas << std::endl;
+    std::cout << "Promedio de calificaciones " << sumaNotas / 10 << std::endl;
 }
 int calificacionesCentinela (int &i, int &sum, int &aprobados, int &reprobados) {
     sum = 0;
@@ -83,3 +83,5 @@ int main() {
     }
     return 0;
 }
+
+
