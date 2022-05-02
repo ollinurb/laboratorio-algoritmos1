@@ -11,3 +11,5 @@ add_executable(src
         main.cpp
         vectores.cpp
         vectores.h)
+
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})

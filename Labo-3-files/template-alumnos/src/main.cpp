@@ -4,15 +4,22 @@
 using namespace std;
 
 int main() {
-    // funcion para generar automaticamente los archivos numericos
-    // generarDatosLaboratorio(); // descomentar para crear automaticamente los archivos necesarios en la parte de entrada-salida. Una vez creados, se puede volver a comentar
     holaModuloVectores(); // función definida en vectores.cpp
     vector<int> v0;
+    v0.push_back(16);
     v0.push_back(4);
     v0.push_back(8);
-    v0.push_back(2);
-    v0.push_back(16);
-    int divisor = 2;
-    std::cout << divide(v0, divisor) << std::endl;
+    cout << "v0: " << v0[0] << " " << v0[1] << " " << v0[2] << endl;
+    cout << v0[0] << v0[1] << v0[2] << endl;
+    int a = 2;
+    cout << "ejercicio 1: " << (divide(v0,a) ? "True" : "False") << endl;
+    cout << "ejercicio 2: " << mayor(v0) << endl;
+    cout << "ejercicio 3: " << reverso(v0)[0] << " " << reverso(v0)[1] << " " << reverso(v0)[2] << endl;
+    cout << "ejercicio 4: " << rotar(v0,2)[0] << " " << rotar(v0,2)[1] << " " << rotar(v0,2)[2] << endl;
+    cout << "ejercicio 5: " << (estaOrdenado(v0) ? "True" : "False") << endl;
+    int n;
+    cin >> n;
+    cout << "ejercicio 6: "; mostrarVector(factoresPrimos(n)); cout << endl;
+    cout << "ejercicio 7: "; mostrarVector(v0);
     return 0;
 }

@@ -36,4 +36,6 @@ void mostrarVector(vector<int> v);
 
 // Y aca van todos los otros headers de los ejercicios del laboratorio
 
+bool estaOrdenado(vector<int> v);
+
 #endif

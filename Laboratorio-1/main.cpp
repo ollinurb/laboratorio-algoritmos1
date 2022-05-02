@@ -95,12 +95,12 @@ int funcionSumaImparesMenoresIterativa(int n){
 }
 
 int sumaDivisoresIterativa (int n) {
-
     int sum = 0;
-    for (int i = 1; i < n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         if (n % i == 0) {
             sum = sum + i;
-        } else {}
+        } else {
+        }
         } return sum;
     }
 
@@ -129,8 +129,8 @@ int funcionCombinatorio (int n, int k) {
 }
 
 int main() {
-    int a;
-    int b;
-    funcionCombinatorio(a,b);
+    int a = 7;
+    std::cout << sumaDivisoresIterativa(a) << std::endl;
+    std::cout << funcionSumaDivisoresIterativa(a) << std::endl;
     return 0;
 }

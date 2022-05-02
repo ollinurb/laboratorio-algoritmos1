@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja "/Users/brunobruzzo/Documents/FACULTAD/4. ALGO1/laboratorio-algoritmos1/Laboratorio-1"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/brunobruzzo/Documents/FACULTAD/4. ALGO1/laboratorio-algoritmos1/Laboratorio-1" -B "/Users/brunobruzzo/Documents/FACULTAD/4. ALGO1/laboratorio-algoritmos1/Laboratorio-1/cmake-build-debug"
 -- The C compiler identification is AppleClang 12.0.0.12000032
 -- The CXX compiler identification is AppleClang 12.0.0.12000032
 -- Detecting C compiler ABI info
