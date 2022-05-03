@@ -1,5 +1,6 @@
 #include "generador.h"
 #include "vectores.h"
+#include <fstream>
 
 using namespace std;
 
@@ -21,5 +22,8 @@ int main() {
     cin >> n;
     cout << "ejercicio 6: "; mostrarVector(factoresPrimos(n)); cout << endl;
     cout << "ejercicio 7: "; mostrarVector(v0);
+    ifstream archivoIn;
+    archivoIn.open("leerVector.in", ios::in);
+    //leerVector(archivoIn);
     return 0;
 }

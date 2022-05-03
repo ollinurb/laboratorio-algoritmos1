@@ -129,3 +129,8 @@ vector<int> randomSinRepeticion(int n, int k) {
     }
     return numeros;
 }
+
+vector<int> leerVector(string nombreArchivo){
+    ifstream archivoIn;
+    archivoIn.open("leerVector.in", ios::in);
+}
