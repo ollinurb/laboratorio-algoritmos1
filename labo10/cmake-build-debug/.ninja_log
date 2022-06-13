@@ -1,0 +1,23 @@
+# ninja log v5
+3828	3887	1655070644482515834	lib/libgtest.a	7bc13a6d8b2a9c4e
+1	833	1655074673942645672	CMakeFiles/labo10.dir/Tests/indicePicoTEST.cpp.o	f288b069689b0377
+1	13	1655069544664388684	CMakeFiles/labo10.dir/lib/Tests/testA.cpp.o	3f47c23d425b820d
+1	287	1655074896512602344	CMakeFiles/labo10.dir/ejercicios.cpp.o	539851e9b2257e92
+1	67	1655077052615346461	build.ninja	21ee9a0e84697724
+1	1373	1655074483687942919	CMakeFiles/labo10.dir/main.cpp.o	301e6d07c541a130
+1	801	1655071421823289201	CMakeFiles/labo10.dir/Tests/testA.cpp.o	212f9e3b09546d72
+2	1524	1655074483831935560	CMakeFiles/labo10.dir/Tests/jumpSearchTEST.cpp.o	6df9ed0766c0edb8
+1	785	1655070641382599868	lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	f11aa4f7827a9b6e
+2	1541	1655074483851934538	CMakeFiles/labo10.dir/Tests/busquedaBinariaTEST.cpp.o	3fbf132102ef1461
+1	3828	1655070644418517565	lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	bed2920d50353f1d
+3887	3898	1655070644494515509	lib/libgtest_main.a	60aaff2496fccef8
+2	652	1655074482963979921	CMakeFiles/labo10.dir/auxiliares.cpp.o	c4b6677dc5086161
+288	458	1655074896680595021	labo10	438d9e024e02a30d
+1	410	1655077867385805917	CMakeFiles/labo10.dir/ejercicios.cpp.o	539851e9b2257e92
+1	510	1655077867485835821	CMakeFiles/labo10.dir/auxiliares.cpp.o	c4b6677dc5086161
+1	948	1655077867925967400	CMakeFiles/labo10.dir/main.cpp.o	301e6d07c541a130
+2	967	1655077867945973381	CMakeFiles/labo10.dir/Tests/indicePicoTEST.cpp.o	f288b069689b0377
+2	1060	1655077868038000866	CMakeFiles/labo10.dir/Tests/busquedaBinariaTEST.cpp.o	3fbf132102ef1461
+2	1092	1655077868070010410	CMakeFiles/labo10.dir/Tests/jumpSearchTEST.cpp.o	6df9ed0766c0edb8
+410	1426	1655077868402109433	CMakeFiles/labo10.dir/Tests/puntoFijoTEST.cpp.o	e9957ff6ce4c5376
+1426	1590	1655077868566158348	labo10	4f9ed7198de780e3
